@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio of Varshitha Mukkera - Web Designer and Developer">
+    <meta name="theme-color" content="#6366f1">
+    <title>Mukkera Priyamani | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%236366f1'/%3E%3Ctext x='50' y='60' font-size='50' font-weight='bold' fill='white' text-anchor='middle'%3EVM%3C/text%3E%3C/svg%3E">
+    <!-- Email.js for Contact Form -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/index.min.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <span class="logo-icon">PM</span>
+                <span class="logo-text">PriyaMani</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <input type="checkbox" id="theme-toggle" class="toggle-checkbox">
+                <label for="theme-toggle" class="toggle-label">
+                    <span class="toggle-icon">🌙</span>
+                </label>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="greeting-text">Welcome to my portfolio</div>
+                <h1 class="hero-title">Hi, I'm <span class="gradient-text">Mukkera Priyamani</span></h1>
+                <p class="hero-subtitle">Full-Stack Developer & Creative Designer</p>
+                <p class="hero-description">Crafting beautiful, functional digital experiences with cutting-edge technologies</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="Mukkera_Priyamani_Resume.pdf" class="btn btn-secondary" target="_blank">Download Resume</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-circle">
+                    <img src="Mukkera_Priyamani_Photo.png" alt="Mukkera Priyamani Profile Picture" class="profile-img animate-profile">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="about.svg" alt="Priyamani - About Me" class="about-img animate-image">
+                </div>
+                <div class="about-text">
+                    <p class="about-intro">Passionate full-stack developer with a keen eye for design and detail</p>
+                    <p>I'm a dedicated web professional combining creative design thinking with technical expertise. My journey spans frontend and backend development, always with a focus on user experience and performance.</p>
+                    <p>I believe in building solutions that are not only visually stunning but also highly functional and accessible. Every project is an opportunity to learn, innovate, and make a meaningful impact.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-number">Impressive</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Skills</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="skills-grid">
+                <!-- Frontend Skills -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">🎨</div>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🎨</div>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">✨</div>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">⚛️</div>
+                            <span>ReactJS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Skills -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">☕</div>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🐍</div>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🗄️</div>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">📝</div>
+                            <span>PHP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Others -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Tools & Other</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">📊</div>
+                            <span>Jupyter Notebook</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🎯</div>
+                            <span>Git & GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">📱</div>
+                            <span>Responsive Design</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">♿</div>
+                            <span>Web Accessibility</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proficiency Bars -->
+            <div class="proficiency-section">
+                <h3 class="proficiency-title">Technical Proficiency</h3>
+                <div class="proficiency-bars">
+                    <div class="proficiency-item">
+                        <label>Web Design</label>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                        <span>80%</span>
+                    </div>
+                    <div class="proficiency-item">
+                        <label>Frontend Development</label>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%;"></div>
+                        </div>
+                        <span>85%</span>
+                    </div>
+                    <div class="proficiency-item">
+                        <label>Backend Development</label>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%;"></div>
+                        </div>
+                        <span>70%</span>
+                    </div>
+                    <div class="proficiency-item">
+                        <label>Database Management</label>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%;"></div>
+                        </div>
+                        <span>75%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1: Community Service - Healthcare & Yoga -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="work.svg" alt="Community Service Project - Healthcare and Yoga Awareness" class="animate-project-img">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" data-modal="project-1">View Case Study →</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Healthcare & Yoga Awareness Platform</h3>
+                        <p>Developed a comprehensive web platform for community health initiatives. Built a user-friendly website for managing elderly care data and providing responsive health information systems.</p>
+                        <div class="project-info">
+                            <p><strong>Role:</strong> Full-Stack Developer</p>
+                            <p><strong>Timeline:</strong> 3 months</p>
+                            <p><strong>Impact:</strong> Served 200+ users, improved data accessibility</p>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Healthcare</span>
+                            <span class="tag">Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Temperature Converter Mobile App -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="work.svg" alt="Temperature Converter Mobile Application" class="animate-project-img">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" data-modal="project-2">View Case Study →</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Temperature Converter Mobile App</h3>
+                        <p>Built an intuitive mobile application for temperature conversion with real-time calculations and a polished user interface. Focused on simplicity and accessibility.</p>
+                        <div class="project-info">
+                            <p><strong>Role:</strong> Mobile App Developer</p>
+                            <p><strong>Timeline:</strong> 2 months</p>
+                            <p><strong>Downloads:</strong> 500+ active users</p>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Mobile</span>
+                            <spaE-Commerce Landing Page -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="work.svg" alt="Professional E-Commerce Landing Page" class="animate-project-img">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" data-modal="project-3">View Case Study →</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Modern E-Commerce Landing Page</h3>
+                        <p>Designed and developed a modern landing page with focus on conversion optimization, accessibility, and responsive design across all devices.</p>
+                        <div class="project-info">
+                            <p><strong>Role:</strong> Web Designer & Developer</p>
+                            <p><strong>Timeline:</strong> 1.5 months</p>
+                            <p><strong>Result:</strong> 35% increase in user engagement</p>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Responsive
+                        <h3>Professional Landing Page</h3>
+                        <p>Created a landing page using HTML and CSS showcasing web design best practices with responsive design and engaging user interface.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest Articles</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Insights on Web Development, Design, and Technology</p>
+            </div>
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <article class="blog-card">
+                    <div class="blog-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <div class="blog-content">
+                        <div class="blog-date">June 1, 2024</div>
+                        <h3 class="blog-title">Building Responsive Web Design: Best Practices</h3>
+                        <p class="blog-excerpt">Learn the essential techniques for creating websites that look perfect on all devices. From mobile-first design to flexible layouts, master RWD.</p>
+                        <div class="blog-tags">
+                            <span class="blog-tag">Web Design</span>
+                            <span class="blog-tag">CSS</span>
+                        </div>
+                        <a href="#" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-card">
+                    <div class="blog-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <div class="blog-content">
+                        <div class="blog-date">May 28, 2024</div>
+                        <h3 class="blog-title">JavaScript Async/Await: Mastering Promises</h3>
+                        <p class="blog-excerpt">Deep dive into asynchronous JavaScript programming. Understand callbacks, promises, and async/await patterns for better code structure.</p>
+                        <div class="blog-tags">
+                            <span class="blog-tag">JavaScript</span>
+                            <span class="blog-tag">Backend</span>
+                        </div>
+                        <a href="#" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-card">
+                    <div class="blog-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <div class="blog-content">
+                        <div class="blog-date">May 20, 2024</div>
+                        <h3 class="blog-title">Database Design Fundamentals for Developers</h3>
+                        <p class="blog-excerpt">Explore the foundations of database design. Learn about normalization, relationships, and optimization strategies for better data management.</p>
+                        <div class="blog-tags">
+                            <span class="blog-tag">Database</span>
+                            <span class="blog-tag">MySQL</span>
+                        </div>
+                        <a href="#" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="blog-card">
+                    <div class="blog-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                    <div class="blog-content">
+                        <div class="blog-date">May 15, 2024</div>
+                        <h3 class="blog-title">Web Accessibility: Making the Web Inclusive</h3>
+                        <p class="blog-excerpt">Create websites that everyone can use. Learn WCAG guidelines, semantic HTML, and accessibility best practices for inclusive design.</p>
+                        <div class="blog-tags">
+                            <span class="blog-tag">Accessibility</span>
+                            <span class="blog-tag">HTML</span>
+                        </div>
+                        <a href="#" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 5 -->
+                <article class="blog-card">
+                    <div class="blog-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);"></div>
+                    <div class="blog-content">
+                        <div class="blog-date">May 10, 2024</div>
+                        <h3 class="blog-title">React Hooks: Level Up Your Functional Components</h3>
+                        <p class="blog-excerpt">Master React Hooks to write cleaner, more efficient components. Learn useState, useEffect, and creating custom hooks.</p>
+                        <div class="blog-tags">
+                            <span class="blog-tag">React</span>
+                            <span class="blog-tag">Frontend</span>
+                        </div>
+                        <a href="#" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 6 -->
+                <article class="blog-card">
+                    <div class="blog-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"></div>
+                    <div class="blog-content">
+                        <div class="blog-date">May 5, 2024</div>
+                        <h3 class="blog-title">Performance Optimization: Speed Up Your Website</h3>
+                        <p class="blog-excerpt">Techniques to improve website performance. Learn about lazy loading, caching, minification, and measuring performance metrics.</p>
+                        <div class="blog-tags">
+                            <span class="blog-tag">Performance</span>
+                            <span class="blog-tag">Optimization</span>
+                        </div>
+                        <a href="#" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Clients Say</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Feedback from people I've worked with</p>
+            </div>
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <p class="testimonial-text">"Priyamani delivered an exceptional healthcare platform that exceeded our expectations. Her attention to detail and problem-solving skills are remarkable. Highly recommended for any web development project!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">😊</div>
+                        <div class="author-info">
+                            <h4 class="author-name">Dr. Rajesh Kumar</h4>
+                            <p class="author-role">Community Health Director</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <p class="testimonial-text">"Working with Priyamani was a pleasure. She has strong technical skills combined with excellent communication. The mobile app she built is intuitive and user-friendly. Definitely hiring again!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👨</div>
+                        <div class="author-info">
+                            <h4 class="author-name">Arjun Singh</h4>
+                            <p class="author-role">Tech Startup Founder</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <p class="testimonial-text">"Excellent designer and developer! Priyamani created a landing page that not only looks beautiful but also converts. Our engagement metrics improved significantly. A true professional!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👩</div>
+                        <div class="author-info">
+                            <h4 class="author-name">Priya Sharma</h4>
+                            <p class="author-role">E-Commerce Manager</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <p class="testimonial-text">"I was impressed with Priyamani's ability to understand our requirements and translate them into a functional solution. Her attention to responsive design and accessibility was standout!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👴</div>
+                        <div class="author-info">
+                            <h4 class="author-name">Vikram Patel</h4>
+                            <p class="author-role">Project Manager</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 5 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <p class="testimonial-text">"Best decision hiring Priyamani! Fast, reliable, and delivers quality work. Her portfolio speaks for itself. Priyamani is the go-to developer for web projects!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👨‍💼</div>
+                        <div class="author-info">
+                            <h4 class="author-name">Rohan Verma</h4>
+                            <p class="author-role">Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 6 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <p class="testimonial-text">"Incredible talent! Priyamani's expertise spans frontend and backend, making her a true full-stack developer. She solved complex challenges with ease and delivered on time!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👩‍💻</div>
+                        <div class="author-info">
+                            <h4 class="author-name">Anjali Desai</h4>
+                            <p class="author-role">Tech Lead</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Have a project in mind? Let's collaborate!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:mukkerapriyamani@gmail.com">mukkerapriyamani@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/priya-mani-b2a28a3a5/" target="_blank">linkedin.com/in/priya-mani-b2a28a3a5/</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="contact-name" placeholder="Your Name" required aria-label="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="contact-email" placeholder="Your Email" required aria-label="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="contact-phone" placeholder="Your Phone (Optional)" aria-label="Your Phone">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="contact-subject" placeholder="Subject" required aria-label="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contact-message" placeholder="Your Message" rows="5" required aria-label="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024-2026 Mukkera Priyamani. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/mukkerapriyamani-stack" target="_blank" aria-label="GitHub">
+                        <span class="social-icon">GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/priya-mani-b2a28a3a5/" target="_blank" aria-label="LinkedIn">
+                        <span class="social-icon">LinkedIn</span>
+                    </a>
+    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
